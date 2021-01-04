@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Question_2
+public class Employee 
 {
     String name;
     float base_salary;
@@ -13,17 +13,18 @@ public class Question_2
         base_salary = que2.nextFloat();
     }
     
-    void calc_salary()
+    double calc_salary()
     {
-        double total_salary = base_salary + ((50/100) * base_salary);
-        System.out.println("Total salary:" + total_salary);
+        double total_salary = base_salary + ((50.0/100.0) * base_salary);
+        return total_salary;
     }
     
     public static void  main()
     {
-        Question_2 obj = new Question_2();
+        Employee obj = new Employee();
         obj.init();
         System.out.println("Name of the employee:" + obj.name);
-        obj.calc_salary();
+        System.out.println("Total salary:" + obj.calc_salary());
+        
     }
 }

@@ -11,14 +11,14 @@ public class Question_1
               p =p+1;
               System.out.print(p + " ");
               
-            }
+           }
             System.out.println();
         }
         }
     public static void main()
     {
-          Question_1 obj = new Question_1 ();
-          obj.pattern();
+         Question_1 obj = new Question_1 ();
+         obj.pattern();
     }
 }
                
